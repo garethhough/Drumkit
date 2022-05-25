@@ -8,7 +8,7 @@ for (let i = 0; i < numberOfDrumButtons; i++) {
 
 
         //Takes the inner HTML of buttons and passes into makeSound function        
-        let buttonInnerHTML = this.innerHTML;
+        let buttonInnerHTML = this.innerHTML.toLowerCase();
 
         makeSound(buttonInnerHTML);
 
@@ -21,53 +21,53 @@ for (let i = 0; i < numberOfDrumButtons; i++) {
 
 //Takes keys pressed and passes into makeSound function
 document.addEventListener("keypress", function (event) {
-    makeSound(event.key);
+    makeSound(event.key.toLowerCase());
 });
 
 
 function makeSound(key) {
     switch (key) {
-        case "A":
+        case "a":
             let openhat = new Audio(src = "sounds/openhat.wav");
             openhat.play();
             break;
 
-        case "S":
+        case "s":
             let hihat = new Audio("sounds/hihat.wav");
             hihat.play();
             break;
 
-        case "D":
+        case "d":
             let kick = new Audio("sounds/kick.wav");
             kick.play();
             break;
 
-        case "F":
+        case "f":
             let boom = new Audio("sounds/boom.wav");
             boom.play();
             break;
 
-        case "G":
+        case "g":
             let snare = new Audio("sounds/snare.wav");
             snare.play();
             break;
 
-        case "H":
+        case "h":
             let ride = new Audio("sounds/ride.wav");
             ride.play();
             break;
 
-        case "J":
+        case "j":
             let tink = new Audio("sounds/tink.wav");
             tink.play();
             break;
 
-        case "K":
+        case "k":
             let tom = new Audio("sounds/tom.wav");
             tom.play();
             break;
 
-        case "L":
+        case "l":
             let clap = new Audio(src = "sounds/clap.wav");
             clap.play();
             break;
