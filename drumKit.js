@@ -11,8 +11,6 @@ for (let i = 0; i < numberOfDrumButtons; i++) {
         let buttonInnerHTML = this.innerHTML.toLowerCase();
 
         makeSound(buttonInnerHTML);
-
-
     });
 
 }
